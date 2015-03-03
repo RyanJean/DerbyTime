@@ -26,8 +26,8 @@ namespace DerbyTime
 
     public class Racer
     {
-        public Den den;
-        public string name;
+        public Den den { get; private set; }
+        public string name { get; private set; }
 
         public Racer(Den den, string name)
         {
