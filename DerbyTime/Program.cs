@@ -27,9 +27,12 @@ namespace DerbyTime
             {
                 Config = CFG;
                 string cfg = string.Format(
-                    "<root>\r\n\t<{0}>{5}</{0}>\r\n\t<{1}>{6}</{1}>\r\n\t<{2}>{7}</{2}>\r\n\t<{3}>{8}</{3}>\r\n\t<{4}>{9}</{4}>\r\n</root>\r\n",
-                    "packNumber", "packLocation", "chosenScheduler", "numberOfLanes", "shuffleHeats",
-                    CFG.PackNumber, CFG.PackLocation, CFG.ChosenScheduler, CFG.NumberOfLanes, CFG.Shuffle);
+                    string.Format(
+                        "<root>{0}{1}{2}{3}{4}{5}\r\n</root>\r\n",
+                        Enumerable.Range(0, 6).Select(q => "\r\n\t<{" + q + "}>{" + (q + 6) + "}</{" + q + "}>").ToArray()
+                        ),
+                    "packNumber", "packLocation", "chosenScheduler", "numberOfLanes", "shuffleHeats", "saveRace",
+                    CFG.PackNumber, CFG.PackLocation, CFG.ChosenScheduler, CFG.NumberOfLanes, CFG.Shuffle, CFG.SaveRace);
                 File.WriteAllText("Derby.config", cfg);
                 return;
             }
@@ -44,7 +47,8 @@ namespace DerbyTime
                     root.GetElementsByTagName("packLocation")[0].InnerText,
                     root.GetElementsByTagName("chosenScheduler")[0].InnerText,
                     int.Parse(root.GetElementsByTagName("numberOfLanes")[0].InnerText),
-                    bool.Parse(root.GetElementsByTagName("shuffleHeats")[0].InnerText)
+                    bool.Parse(root.GetElementsByTagName("shuffleHeats")[0].InnerText),
+                    bool.Parse(root.GetElementsByTagName("saveRace")[0].InnerText)
                 );
             }
             catch

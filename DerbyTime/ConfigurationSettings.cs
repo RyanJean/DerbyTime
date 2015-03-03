@@ -40,6 +40,7 @@ namespace DerbyTime
                 fld_LaneCount.SelectedItem = Config.NumberOfLanes.ToString();
                 fld_Algorithm.SelectedItem = Config.ChosenScheduler;
                 fld_Shuffle.Checked = Config.Shuffle;
+                fld_SaveRace.Checked = Config.SaveRace;
             }
             else
             {
@@ -63,8 +64,9 @@ namespace DerbyTime
             var LaneCount = int.Parse(fld_LaneCount.SelectedItem.ToString());
             var Algorithm = fld_Algorithm.SelectedItem.ToString();
             var Shuffle = fld_Shuffle.Checked;
+            var SaveRace = fld_SaveRace.Checked;
 
-            Config = new ConfigDetails(PackNumber, PackLocation, Algorithm, LaneCount, Shuffle);
+            Config = new ConfigDetails(PackNumber, PackLocation, Algorithm, LaneCount, Shuffle, SaveRace);
             Program.LoadConfig(Config);
             this.Close();
         }

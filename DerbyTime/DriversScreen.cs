@@ -16,6 +16,9 @@ namespace DerbyTime
         public DriversScreen()
         {
             InitializeComponent();
+            Drivers.Add(new Racer(Den.Bear, ""));
+            Drivers.Add(new Racer(Den.Bear, ""));
+            Drivers.Add(new Racer(Den.Bear, ""));
         }
     }
 }

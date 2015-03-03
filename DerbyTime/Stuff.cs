@@ -12,13 +12,15 @@ namespace DerbyTime
         public string ChosenScheduler { get; private set; }
         public int NumberOfLanes { get; private set; }
         public bool Shuffle { get; private set; }
-        public ConfigDetails(int PackNumber, string PackLocation, string ChosenScheduler, int NumberOfLanes, bool Shuffle)
+        public bool SaveRace { get; private set; }
+        public ConfigDetails(int PackNumber, string PackLocation, string ChosenScheduler, int NumberOfLanes, bool Shuffle, bool SaveRace)
         {
             this.PackNumber = PackNumber;
             this.PackLocation = PackLocation;
             this.ChosenScheduler = ChosenScheduler;
             this.NumberOfLanes = NumberOfLanes;
             this.Shuffle = Shuffle;
+            this.SaveRace = SaveRace;
         }
     }
 

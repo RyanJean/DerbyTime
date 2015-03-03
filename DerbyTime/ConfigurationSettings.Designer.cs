@@ -42,6 +42,7 @@ namespace DerbyTime
             this.AlgorithmInfo = new System.Windows.Forms.TextBox();
             this.btn_Save = new System.Windows.Forms.Button();
             this.btn_Cancel = new System.Windows.Forms.Button();
+            this.fld_SaveRace = new System.Windows.Forms.CheckBox();
             this.AlgorithmInfoBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -168,11 +169,24 @@ namespace DerbyTime
             this.btn_Cancel.Text = "Cancel";
             this.btn_Cancel.UseVisualStyleBackColor = true;
             // 
+            // fld_SaveRace
+            // 
+            this.fld_SaveRace.AutoSize = true;
+            this.fld_SaveRace.Checked = true;
+            this.fld_SaveRace.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.fld_SaveRace.Location = new System.Drawing.Point(255, 140);
+            this.fld_SaveRace.Name = "fld_SaveRace";
+            this.fld_SaveRace.Size = new System.Drawing.Size(111, 17);
+            this.fld_SaveRace.TabIndex = 15;
+            this.fld_SaveRace.Text = "Auto-Save Race?";
+            this.fld_SaveRace.UseVisualStyleBackColor = true;
+            // 
             // ConfigurationSettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(408, 305);
+            this.Controls.Add(this.fld_SaveRace);
             this.Controls.Add(this.btn_Cancel);
             this.Controls.Add(this.btn_Save);
             this.Controls.Add(this.AlgorithmInfoBox);
@@ -212,6 +226,7 @@ namespace DerbyTime
         private System.Windows.Forms.ComboBox fld_LaneCount;
         private System.Windows.Forms.ComboBox fld_Algorithm;
         private System.Windows.Forms.CheckBox fld_Shuffle;
+        private System.Windows.Forms.CheckBox fld_SaveRace;
         private System.Windows.Forms.GroupBox AlgorithmInfoBox;
         private System.Windows.Forms.TextBox AlgorithmInfo;
         private System.Windows.Forms.Button btn_Save;
