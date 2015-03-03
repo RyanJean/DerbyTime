@@ -17,9 +17,7 @@ namespace DerbyTime
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             LoadConfig();
-            Application.Run(new Splash());
-            if (Config == null)
-                Application.Run(new ConfigurationSettings());
+            Application.Run(new SplashScreen());
             Application.Run(new MainScreen());
         }
 

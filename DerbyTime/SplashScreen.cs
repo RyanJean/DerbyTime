@@ -9,13 +9,13 @@ using System.Windows.Forms;
 
 namespace DerbyTime
 {
-    public partial class Splash : Form
+    public partial class SplashScreen : Form
     {
-        public Splash()
+        public SplashScreen()
         {
             InitializeComponent();
             Timer t = new Timer();
-            t.Interval = 3500;
+            t.Interval = 2500;
             t.Tick += t_Tick;
             t.Start();
         }

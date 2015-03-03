@@ -44,17 +44,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="About.cs">
+    <Compile Include="AboutScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="About.Designer.cs">
-      <DependentUpon>About.cs</DependentUpon>
+    <Compile Include="AboutScreen.Designer.cs">
+      <DependentUpon>AboutScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="ConfigurationSettings.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ConfigurationSettings.Designer.cs">
       <DependentUpon>ConfigurationSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DriversScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DriversScreen.Designer.cs">
+      <DependentUpon>DriversScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="MainScreen.cs">
       <SubType>Form</SubType>
@@ -69,15 +75,21 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Splash.cs">
+    <Compile Include="RaceScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Splash.Designer.cs">
-      <DependentUpon>Splash.cs</DependentUpon>
+    <Compile Include="RaceScreen.Designer.cs">
+      <DependentUpon>RaceScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Stuff.cs" />
-    <EmbeddedResource Include="About.resx">
-      <DependentUpon>About.cs</DependentUpon>
+    <EmbeddedResource Include="AboutScreen.resx">
+      <DependentUpon>AboutScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ConfigurationSettings.resx">
       <DependentUpon>ConfigurationSettings.cs</DependentUpon>
@@ -90,8 +102,8 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Splash.resx">
-      <DependentUpon>Splash.cs</DependentUpon>
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

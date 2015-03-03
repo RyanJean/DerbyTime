@@ -9,16 +9,11 @@ using System.Windows.Forms;
 
 namespace DerbyTime
 {
-    public partial class About : Form
+    public partial class RaceScreen : Form
     {
-        public About()
+        public RaceScreen()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }
