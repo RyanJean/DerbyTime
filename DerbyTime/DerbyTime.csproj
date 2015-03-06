@@ -34,6 +34,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -56,11 +57,23 @@
     <Compile Include="ConfigurationSettings.Designer.cs">
       <DependentUpon>ConfigurationSettings.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\DriverControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\DriverControl.Designer.cs">
+      <DependentUpon>DriverControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="DriversScreen.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DriversScreen.Designer.cs">
       <DependentUpon>DriversScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditDriver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditDriver.Designer.cs">
+      <DependentUpon>EditDriver.cs</DependentUpon>
     </Compile>
     <Compile Include="MainScreen.cs">
       <SubType>Form</SubType>
@@ -94,6 +107,15 @@
     <EmbeddedResource Include="ConfigurationSettings.resx">
       <DependentUpon>ConfigurationSettings.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Controls\DriverControl.resx">
+      <DependentUpon>DriverControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DriversScreen.resx">
+      <DependentUpon>DriversScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditDriver.resx">
+      <DependentUpon>EditDriver.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainScreen.resx">
       <DependentUpon>MainScreen.cs</DependentUpon>
     </EmbeddedResource>
@@ -102,9 +124,14 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="RaceScreen.resx">
+      <DependentUpon>RaceScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SplashScreen.resx">
       <DependentUpon>SplashScreen.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\DataSources\EditDriver.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -155,6 +182,57 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Badge_Wolf_1200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graphics_Oval.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu_Add1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu_Add2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu_Delete1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu_Delete2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu_Edit1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu_Edit2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu_Flag1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu_Flag2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu_Gear1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu_Gear2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu_Load1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu_Load2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu_Save1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu_Save2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu_Wheel1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu_Wheel2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

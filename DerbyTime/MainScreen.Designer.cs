@@ -38,7 +38,7 @@
             // btn_Drivers
             // 
             this.btn_Drivers.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Drivers.Image = global::DerbyTime.Properties.Resources.Menu_Wheel;
+            this.btn_Drivers.Image = global::DerbyTime.Properties.Resources.Menu_Wheel_64;
             this.btn_Drivers.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_Drivers.Location = new System.Drawing.Point(12, 93);
             this.btn_Drivers.Name = "btn_Drivers";
@@ -52,7 +52,7 @@
             // btn_Race
             // 
             this.btn_Race.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Race.Image = global::DerbyTime.Properties.Resources.Menu_Flag;
+            this.btn_Race.Image = global::DerbyTime.Properties.Resources.Menu_Flag_64;
             this.btn_Race.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_Race.Location = new System.Drawing.Point(12, 174);
             this.btn_Race.Name = "btn_Race";
@@ -66,7 +66,7 @@
             // btn_Config
             // 
             this.btn_Config.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Config.Image = global::DerbyTime.Properties.Resources.Menu_Gear;
+            this.btn_Config.Image = global::DerbyTime.Properties.Resources.Menu_Gear_64;
             this.btn_Config.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_Config.Location = new System.Drawing.Point(12, 12);
             this.btn_Config.Name = "btn_Config";
@@ -100,7 +100,7 @@
             this.Controls.Add(this.btn_Drivers);
             this.Controls.Add(this.btn_Race);
             this.Controls.Add(this.btn_Config);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "MainScreen";

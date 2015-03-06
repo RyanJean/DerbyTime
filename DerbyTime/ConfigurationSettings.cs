@@ -13,10 +13,11 @@ namespace DerbyTime
 {
     public partial class ConfigurationSettings : Form
     {
-        private ConfigDetails Config = Program.Config;
+        private ConfigDetails Config;
         private SchedulerDetails[] Details;
-        public ConfigurationSettings()
+        public ConfigurationSettings(ConfigDetails cfg)
         {
+            Config = cfg;
             Details = RaceScheduler.GetAllSchedulers();
             InitializeComponent();
 

@@ -143,9 +143,9 @@ namespace DerbyTime.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Menu_Add {
+        internal static System.Drawing.Bitmap Graphics_Oval {
             get {
-                object obj = ResourceManager.GetObject("Menu_Add", resourceCulture);
+                object obj = ResourceManager.GetObject("Graphics_Oval", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -153,9 +153,9 @@ namespace DerbyTime.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Menu_Delete {
+        internal static System.Drawing.Bitmap Menu_Add_40 {
             get {
-                object obj = ResourceManager.GetObject("Menu_Delete", resourceCulture);
+                object obj = ResourceManager.GetObject("Menu_Add_40", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -163,9 +163,9 @@ namespace DerbyTime.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Menu_Edit {
+        internal static System.Drawing.Bitmap Menu_Add_50 {
             get {
-                object obj = ResourceManager.GetObject("Menu_Edit", resourceCulture);
+                object obj = ResourceManager.GetObject("Menu_Add_50", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -173,9 +173,9 @@ namespace DerbyTime.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Menu_Flag {
+        internal static System.Drawing.Bitmap Menu_Add_64 {
             get {
-                object obj = ResourceManager.GetObject("Menu_Flag", resourceCulture);
+                object obj = ResourceManager.GetObject("Menu_Add_64", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -183,9 +183,119 @@ namespace DerbyTime.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Menu_Gear {
+        internal static System.Drawing.Bitmap Menu_Delete_40 {
             get {
-                object obj = ResourceManager.GetObject("Menu_Gear", resourceCulture);
+                object obj = ResourceManager.GetObject("Menu_Delete_40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Menu_Delete_50 {
+            get {
+                object obj = ResourceManager.GetObject("Menu_Delete_50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Menu_Delete_64 {
+            get {
+                object obj = ResourceManager.GetObject("Menu_Delete_64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Menu_Edit_40 {
+            get {
+                object obj = ResourceManager.GetObject("Menu_Edit_40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Menu_Edit_50 {
+            get {
+                object obj = ResourceManager.GetObject("Menu_Edit_50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Menu_Edit_64 {
+            get {
+                object obj = ResourceManager.GetObject("Menu_Edit_64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Menu_Flag_40 {
+            get {
+                object obj = ResourceManager.GetObject("Menu_Flag_40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Menu_Flag_50 {
+            get {
+                object obj = ResourceManager.GetObject("Menu_Flag_50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Menu_Flag_64 {
+            get {
+                object obj = ResourceManager.GetObject("Menu_Flag_64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Menu_Gear_40 {
+            get {
+                object obj = ResourceManager.GetObject("Menu_Gear_40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Menu_Gear_50 {
+            get {
+                object obj = ResourceManager.GetObject("Menu_Gear_50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Menu_Gear_64 {
+            get {
+                object obj = ResourceManager.GetObject("Menu_Gear_64", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -203,9 +313,9 @@ namespace DerbyTime.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Menu_Load {
+        internal static System.Drawing.Bitmap Menu_Load_40 {
             get {
-                object obj = ResourceManager.GetObject("Menu_Load", resourceCulture);
+                object obj = ResourceManager.GetObject("Menu_Load_40", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -213,9 +323,9 @@ namespace DerbyTime.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Menu_Save {
+        internal static System.Drawing.Bitmap Menu_Load_50 {
             get {
-                object obj = ResourceManager.GetObject("Menu_Save", resourceCulture);
+                object obj = ResourceManager.GetObject("Menu_Load_50", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -223,9 +333,69 @@ namespace DerbyTime.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Menu_Wheel {
+        internal static System.Drawing.Bitmap Menu_Load_64 {
             get {
-                object obj = ResourceManager.GetObject("Menu_Wheel", resourceCulture);
+                object obj = ResourceManager.GetObject("Menu_Load_64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Menu_Save_40 {
+            get {
+                object obj = ResourceManager.GetObject("Menu_Save_40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Menu_Save_50 {
+            get {
+                object obj = ResourceManager.GetObject("Menu_Save_50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Menu_Save_64 {
+            get {
+                object obj = ResourceManager.GetObject("Menu_Save_64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Menu_Wheel_40 {
+            get {
+                object obj = ResourceManager.GetObject("Menu_Wheel_40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Menu_Wheel_50 {
+            get {
+                object obj = ResourceManager.GetObject("Menu_Wheel_50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Menu_Wheel_64 {
+            get {
+                object obj = ResourceManager.GetObject("Menu_Wheel_64", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -142,31 +142,82 @@
   <data name="DerbyTimeIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DerbyTime.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Menu_Add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Graphics_Oval" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Graphics_Oval.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Menu_Add_40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Menu_Add2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Menu_Add_50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Menu_Add1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Menu_Add_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Menu_Add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Menu_Delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Menu_Delete_40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Menu_Delete2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Menu_Delete_50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Menu_Delete1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Menu_Delete_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Menu_Delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Menu_Edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Menu_Edit_40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Menu_Edit2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Menu_Edit_50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Menu_Edit1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Menu_Edit_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Menu_Edit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Menu_Flag" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Menu_Flag_40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Menu_Flag2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Menu_Flag_50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Menu_Flag1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Menu_Flag_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Menu_Flag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Menu_Gear" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Menu_Gear_40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Menu_Gear2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Menu_Gear_50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Menu_Gear1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Menu_Gear_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Menu_Gear.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Menu_Info" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Menu_Info.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Menu_Load" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Menu_Load_40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Menu_Load2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Menu_Load_50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Menu_Load1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Menu_Load_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Menu_Load.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Menu_Save" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Menu_Save_40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Menu_Save2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Menu_Save_50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Menu_Save1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Menu_Save_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Menu_Save.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Menu_Wheel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Menu_Wheel_40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Menu_Wheel2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Menu_Wheel_50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Menu_Wheel1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Menu_Wheel_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Menu_Wheel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
