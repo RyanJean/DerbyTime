@@ -21,7 +21,7 @@ namespace DerbyTime
         {
             InitializeComponent();
             ShowScrollBar(DriversPanel.Handle, 1 /* vert */, true);
-            Drivers = MainScreen.Drivers.ToArray().ToList();
+            Drivers = Program.Interface.getDrivers();
             RefreshList();
         }
 
@@ -31,13 +31,12 @@ namespace DerbyTime
             foreach (Racer r in Drivers.OrderBy(q => q.raceNo))
                 DriversPanel.Controls.Add(new DriverControl(r));
             btn_Load.Enabled = (Drivers.Count == 0);
-            btn_Save.Enabled = (Drivers.Count >= Program.Config.NumberOfLanes);
+            btn_Save.Enabled = (Drivers.Count >= Program.Interface.getConfig().NumberOfLanes);
         }
 
         public void RemoveDriver(Racer r)
         {
             Drivers.Remove(r);
-            RefreshList();
         }
 
         // This is used to allow us to force the vertical scrollbar on the panel.
@@ -47,7 +46,7 @@ namespace DerbyTime
 
         private void btn_Ok_Click(object sender, EventArgs e)
         {
-            MainScreen.Drivers = Drivers.OrderBy(q => q.raceNo).ToList();
+            Program.Interface.setDrivers(Drivers);
             Close();
         }
 
@@ -69,7 +68,7 @@ namespace DerbyTime
                     s = Regex.Match(s, "## Drivers.*?(?=($|\r\n##))", RegexOptions.Singleline).Value;
                     s = Regex.Replace(s, "## Drivers\r\n", "");
                     s = Regex.Replace(s, "\r\n", "\n");
-                    foreach (string ss in s.Split('\n'))
+                    foreach (string ss in s.Split('\n').Take(200))
                     {
                         string[] sss = ss.Split('\t');
                         try {
@@ -104,8 +103,14 @@ namespace DerbyTime
 
         private void btn_Add_Click(object sender, EventArgs e)
         {
+            if (Drivers.Count >= 200)
+            {
+                MessageBox.Show("You may not have over 200 cars!", "Oops", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                return;
+            }
             EditDriver edit = new EditDriver();
             edit.ShowDialog();
+            RefreshList();
         }
 
     }

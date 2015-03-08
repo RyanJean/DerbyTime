@@ -68,7 +68,7 @@ namespace DerbyTime
             var SaveRace = fld_SaveRace.Checked;
 
             Config = new ConfigDetails(PackNumber, PackLocation, Algorithm, LaneCount, Shuffle, SaveRace);
-            Program.LoadConfig(Config);
+            Program.Interface.setConfig(Config);
             this.Close();
         }
 

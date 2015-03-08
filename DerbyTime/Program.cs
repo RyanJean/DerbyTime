@@ -9,8 +9,8 @@ namespace DerbyTime
 {
     static class Program
     {
-        public static ConfigDetails Config { get; private set; }
-
+        public static MasterInterface Interface = new MasterInterface();
+        
         [STAThread]
         static void Main()
         {
@@ -21,40 +21,48 @@ namespace DerbyTime
             Application.Run(new MainScreen());
         }
 
-        public static void LoadConfig(ConfigDetails CFG = null)
+        static void LoadConfig()
         {
-            if (CFG != null)
-            {
-                Config = CFG;
-                string cfg = string.Format(
-                    string.Format(
-                        "<root>{0}{1}{2}{3}{4}{5}\r\n</root>\r\n",
-                        Enumerable.Range(0, 6).Select(q => "\r\n\t<{" + q + "}>{" + (q + 6) + "}</{" + q + "}>").ToArray()
-                        ),
-                    "packNumber", "packLocation", "chosenScheduler", "numberOfLanes", "shuffleHeats", "saveRace",
-                    CFG.PackNumber, CFG.PackLocation, CFG.ChosenScheduler, CFG.NumberOfLanes, CFG.Shuffle, CFG.SaveRace);
-                File.WriteAllText("Derby.config", cfg);
-                return;
-            }
-
             XmlDocument xDoc = new XmlDocument();
-            try
-            {
+            try {
                 xDoc.Load("Derby.config");
                 var root = xDoc.DocumentElement;
-                Config = new ConfigDetails(
+                Interface.setConfig(new ConfigDetails(
                     int.Parse(root.GetElementsByTagName("packNumber")[0].InnerText),
                     root.GetElementsByTagName("packLocation")[0].InnerText,
                     root.GetElementsByTagName("chosenScheduler")[0].InnerText,
                     int.Parse(root.GetElementsByTagName("numberOfLanes")[0].InnerText),
                     bool.Parse(root.GetElementsByTagName("shuffleHeats")[0].InnerText),
                     bool.Parse(root.GetElementsByTagName("saveRace")[0].InnerText)
-                );
-            }
-            catch
-            {
-                Config = null;
-            }
+                ));
+            } catch { }
         }
+    }
+
+    public class MasterInterface
+    {
+        private ConfigDetails Config = null;
+        private List<Racer> Drivers = new List<Racer>();
+
+        public DriversScreen scr_Drivers = null;
+        public RaceScreen scr_Race = null;
+        public AboutScreen scr_About = null;
+
+        public ConfigDetails getConfig() { return Config; }
+        public void setConfig(ConfigDetails cfg)
+        {
+            Config = cfg;
+            string str_cfg = string.Format(
+                string.Format(
+                    "<root>{0}{1}{2}{3}{4}{5}\r\n</root>\r\n",
+                    Enumerable.Range(0, 6).Select(q => "\r\n\t<{" + q + "}>{" + (q + 6) + "}</{" + q + "}>").ToArray()
+                    ),
+                "packNumber", "packLocation", "chosenScheduler", "numberOfLanes", "shuffleHeats", "saveRace",
+                cfg.PackNumber, cfg.PackLocation, cfg.ChosenScheduler, cfg.NumberOfLanes, cfg.Shuffle, cfg.SaveRace);
+            File.WriteAllText("Derby.config", str_cfg);
+        }
+
+        public List<Racer> getDrivers() { return Drivers.ToList(); }
+        public void setDrivers(List<Racer> drv) { Drivers = drv.OrderBy(q => q.raceNo).ToList(); }
     }
 }

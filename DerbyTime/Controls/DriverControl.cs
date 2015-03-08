@@ -41,11 +41,13 @@ namespace DerbyTime.Controls
         {
             EditDriver edit = new EditDriver(r);
             edit.ShowDialog();
+            Program.Interface.scr_Drivers.RefreshList();
         }
 
         private void btn_Delete_Click(object sender, EventArgs e)
         {
-            MainScreen.scr_Drivers.RemoveDriver(this.r);
+            Program.Interface.scr_Drivers.RemoveDriver(this.r);
+            Program.Interface.scr_Drivers.RefreshList();
         }
 
     }
