@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" %>{"updates": "<%=DerbyTimeWeb.MySession.Current.isUpdate.ToString() %>"}

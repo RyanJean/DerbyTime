@@ -16,6 +16,11 @@ Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "DerbyWix", "DerbyWix\DerbyW
 		{ABAD2545-4A5A-4C33-A924-3B2D721F8CB4} = {ABAD2545-4A5A-4C33-A924-3B2D721F8CB4}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DerbyTimeWeb", "DerbyTimeWeb\DerbyTimeWeb.csproj", "{9F25F7D1-F815-4ABD-B5F3-8668DE8B6EF3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CD463E2B-B6A7-479C-A455-8EE9979F1FF3} = {CD463E2B-B6A7-479C-A455-8EE9979F1FF3}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -56,6 +61,16 @@ Global
 		{45C6D1B0-28D8-4119-89D2-0DCD58C44357}.Release|Mixed Platforms.Build.0 = Release|x86
 		{45C6D1B0-28D8-4119-89D2-0DCD58C44357}.Release|x86.ActiveCfg = Release|x86
 		{45C6D1B0-28D8-4119-89D2-0DCD58C44357}.Release|x86.Build.0 = Release|x86
+		{9F25F7D1-F815-4ABD-B5F3-8668DE8B6EF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F25F7D1-F815-4ABD-B5F3-8668DE8B6EF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F25F7D1-F815-4ABD-B5F3-8668DE8B6EF3}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{9F25F7D1-F815-4ABD-B5F3-8668DE8B6EF3}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{9F25F7D1-F815-4ABD-B5F3-8668DE8B6EF3}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9F25F7D1-F815-4ABD-B5F3-8668DE8B6EF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F25F7D1-F815-4ABD-B5F3-8668DE8B6EF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F25F7D1-F815-4ABD-B5F3-8668DE8B6EF3}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{9F25F7D1-F815-4ABD-B5F3-8668DE8B6EF3}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{9F25F7D1-F815-4ABD-B5F3-8668DE8B6EF3}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

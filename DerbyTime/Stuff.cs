@@ -44,6 +44,24 @@ namespace DerbyTime
 
     public enum Den { Webelos = 5, Bear = 4, Wolf = 3, Tiger = 2, Bobcat = 1, None = 0 }
 
+    public class Item
+    {
+        public string Name;
+        public int Value;
+        public Item(string name, int value, int cars)
+        {
+            Name = value.ToString() + "  (" + (cars*value).ToString() + " Heats)";
+            if (!string.IsNullOrEmpty(name))
+                Name += " | " + name;
+            Value = value;
+        }
+        public override string ToString()
+        {
+            // Generates the text shown in the combo box
+            return Name;
+        }
+    }
+
     public class ImageHandling
     {
         public static Rectangle GetScaledRectangle(Image img, Rectangle thumbRect)

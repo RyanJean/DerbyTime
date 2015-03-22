@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="DerbyTimeWeb.SiteMaster" %>
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <title>Derby Time!</title>
+    <link href="~/Images/DerbyTime.ico" rel="shortcut icon" type="image/x-icon" />
+    <asp:PlaceHolder runat="server">        
+        <script src="<%: ResolveUrl("~/Scripts/modernizr-2.6.2.js") %>"></script>
+    </asp:PlaceHolder>
+    <meta name="viewport" content="width=device-width" />
+    <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
+    <style>
+        html, body { margin: 0px; padding: 0px; height: 100%; width: 100%; font-variant:small-caps; }
+        #menuzone { width: 100%; height: 50px; border-bottom: 1px solid black; font-size: 40pt; margin: 0px; padding: 3px 10px; }
+        #body { margin: 0px; padding: 10px; text-align: center; }
+        button { cursor: pointer; }
+        body {
+            background-image: url('Images/Badges/Badge_Scout.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <form runat="server">
+    <asp:ScriptManager runat="server">
+        <Scripts>
+            <asp:ScriptReference Name="jquery" />
+            <asp:ScriptReference Name="jquery.ui.combined" />
+        </Scripts>
+    </asp:ScriptManager>
+    <header>
+        <div id="menuzone">
+            <img src="Images/DerbyTime.png" height="50" />
+            Derby Time!
+        </div>
+    </header>
+    <div id="body">
+        <asp:ContentPlaceHolder runat="server" ID="MainContent" />
+    </div>
+    </form>
+</body>
+</html>

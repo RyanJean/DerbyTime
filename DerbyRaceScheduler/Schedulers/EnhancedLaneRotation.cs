@@ -10,8 +10,7 @@ namespace DerbyRaceScheduler.Schedulers
         SchedulerDetails IScheduler.Details { get { return new SchedulerDetails(
             this.GetType().Name,
             "Enhanced Lane Rotation",
-            "SCHEDULER'S DESCRIPTION"
-            //"This racing schedule supports all lane and car counts, and any number of rounds from 1-12 regardless of lane/car counts.\r\n\r\nThis is the most simplistic schedule, and guarantees only that each car will race once per lane, per round.\r\n\r\nRandomness is low, and cars will always be matched up against the same other cars."
+            "This racing schedule supports all lane and car counts, and from 1-12 runs depending on lane/car counts.\r\n\r\nThis is the most fair schedule, and guarantees not only that each car will race once per lane, per round, but also the maximum distribution of opponents in the various races."
         ); } }
 
         RunSetInformation[] IScheduler.getAvailableRuns(int lanes, int cars)
@@ -28,7 +27,6 @@ namespace DerbyRaceScheduler.Schedulers
             
             var allRuns = getRuns(lanes, cars);
             var thisRun = cleanupRuns(allRuns, lanes, runs);
-            //var range = Enumerable.Range(1, cars).ToArray();
             
             List<int[]> Heats = new List<int[]>();
             foreach (int[] run in thisRun)
@@ -42,7 +40,7 @@ namespace DerbyRaceScheduler.Schedulers
             return new RaceSchedule("Enhanced Lane Rotation | " + ScheduleTypes[allRuns[runs]], lanes, cars, runs, Heats.ToArray());
         }
 
-        private string[] ScheduleTypes = { "Miscellaneous", "Partial Perfect-N", "Perfect-N", "Perfect-N Complement" };
+        private string[] ScheduleTypes = { "Miscellaneous", "Partial Perfect-N", "Perfect-N", "Perfect-N" /*Complement*/ };
 
         #region int[] getRuns(int l, int c)
         private int[] getRuns(int l, int c)

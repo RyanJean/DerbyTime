@@ -9,8 +9,7 @@ namespace DerbyRaceScheduler.Schedulers
         SchedulerDetails IScheduler.Details { get { return new SchedulerDetails(
             this.GetType().Name,
             "Chaotic Lane Rotation",
-            "SCHEDULER'S DESCRIPTION"
-            //"This racing schedule supports all lane and car counts, and any number of rounds from 1-12 regardless of lane/car counts.\r\n\r\nThis is the most simplistic schedule, and guarantees only that each car will race once per lane, per round.\r\n\r\nRandomness is low, and cars will always be matched up against the same other cars."
+            "This racing schedule supports all lane and car counts, and any number of rounds from 1-12 regardless of lane/car counts.\r\n\r\nThis is the most random schedule, and guarantees that each car will race once per lane, per round, but randomizes the opponents otherwise."
         ); } }
 
         RunSetInformation[] IScheduler.getAvailableRuns(int lanes, int cars)

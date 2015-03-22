@@ -56,6 +56,7 @@ namespace DerbyTime
             {
                 ofd.Filter = "Driver List (*.drvr)|*drvr|Race Capture (*.race)|*.race";
                 ofd.Title = "Load a Driver Manifest File";
+                ofd.DefaultExt = ".drvr";
                 if (ofd.ShowDialog() == DialogResult.OK)
                 {
                     string s;

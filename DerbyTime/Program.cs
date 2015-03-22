@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DerbyRaceScheduler;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -43,9 +44,12 @@ namespace DerbyTime
     {
         private ConfigDetails Config = null;
         private List<Racer> Drivers = new List<Racer>();
+        private RaceSchedule Schedule = null;
 
         public DriversScreen scr_Drivers = null;
+        public RaceLoadScreen scr_RaceLoad = null;
         public RaceScreen scr_Race = null;
+        public SpectatorScreen scr_Spectator = null;
         public AboutScreen scr_About = null;
 
         public ConfigDetails getConfig() { return Config; }
@@ -64,5 +68,8 @@ namespace DerbyTime
 
         public List<Racer> getDrivers() { return Drivers.ToList(); }
         public void setDrivers(List<Racer> drv) { Drivers = drv.OrderBy(q => q.raceNo).ToList(); }
+
+        public RaceSchedule getSchedule() { return Schedule; }
+        public void setSchedule(RaceSchedule s) { Schedule = s; }
     }
 }

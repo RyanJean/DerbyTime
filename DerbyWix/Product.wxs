@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
-	<Product Id="*" Name="DerbyTime_v1.0" Language="1033" Version="1.0.2015.0301" Manufacturer="" UpgradeCode="d19e51d7-3716-4539-b722-88c608df75e6">
+	<Product Id="*" Name="DerbyTime_v1.0" Language="1033" Version="1.0.2015.0301" Manufacturer="RyanMJean" UpgradeCode="d19e51d7-3716-4539-b722-88c608df75e6">
 		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
 
 		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />

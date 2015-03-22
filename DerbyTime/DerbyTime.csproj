@@ -45,16 +45,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AboutScreen.cs">
+    <Compile Include="Screens\AboutScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AboutScreen.Designer.cs">
+    <Compile Include="Screens\AboutScreen.Designer.cs">
       <DependentUpon>AboutScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="ConfigurationSettings.cs">
+    <Compile Include="Screens\ConfigurationSettings.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ConfigurationSettings.Designer.cs">
+    <Compile Include="Screens\ConfigurationSettings.Designer.cs">
       <DependentUpon>ConfigurationSettings.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\DriverControl.cs">
@@ -63,22 +63,22 @@
     <Compile Include="Controls\DriverControl.Designer.cs">
       <DependentUpon>DriverControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="DriversScreen.cs">
+    <Compile Include="Screens\DriversScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DriversScreen.Designer.cs">
+    <Compile Include="Screens\DriversScreen.Designer.cs">
       <DependentUpon>DriversScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="EditDriver.cs">
+    <Compile Include="Screens\EditDriver.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EditDriver.Designer.cs">
+    <Compile Include="Screens\EditDriver.Designer.cs">
       <DependentUpon>EditDriver.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainScreen.cs">
+    <Compile Include="Screens\MainScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainScreen.Designer.cs">
+    <Compile Include="Screens\MainScreen.Designer.cs">
       <DependentUpon>MainScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -88,35 +88,47 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="RaceScreen.cs">
+    <Compile Include="Screens\RaceLoadScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RaceScreen.Designer.cs">
+    <Compile Include="Screens\RaceLoadScreen.Designer.cs">
+      <DependentUpon>RaceLoadScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\RaceScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\RaceScreen.Designer.cs">
       <DependentUpon>RaceScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="SplashScreen.cs">
+    <Compile Include="Screens\SpectatorScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SplashScreen.Designer.cs">
+    <Compile Include="Screens\SpectatorScreen.Designer.cs">
+      <DependentUpon>SpectatorScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\SplashScreen.Designer.cs">
       <DependentUpon>SplashScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Stuff.cs" />
-    <EmbeddedResource Include="AboutScreen.resx">
+    <EmbeddedResource Include="Screens\AboutScreen.resx">
       <DependentUpon>AboutScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ConfigurationSettings.resx">
+    <EmbeddedResource Include="Screens\ConfigurationSettings.resx">
       <DependentUpon>ConfigurationSettings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\DriverControl.resx">
       <DependentUpon>DriverControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DriversScreen.resx">
+    <EmbeddedResource Include="Screens\DriversScreen.resx">
       <DependentUpon>DriversScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EditDriver.resx">
+    <EmbeddedResource Include="Screens\EditDriver.resx">
       <DependentUpon>EditDriver.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainScreen.resx">
+    <EmbeddedResource Include="Screens\MainScreen.resx">
       <DependentUpon>MainScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -124,10 +136,13 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="RaceScreen.resx">
+    <EmbeddedResource Include="Screens\RaceLoadScreen.resx">
+      <DependentUpon>RaceLoadScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\RaceScreen.resx">
       <DependentUpon>RaceScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SplashScreen.resx">
+    <EmbeddedResource Include="Screens\SplashScreen.resx">
       <DependentUpon>SplashScreen.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
